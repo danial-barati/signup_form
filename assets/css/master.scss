@@ -1,0 +1,123 @@
+@font-face {
+  font-family: orbit;
+  src: url(../font/font/Orbitron-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#141e30, #243b55);
+  > form {
+    background: rgba(0, 0, 0, 0.5);
+    width: 450px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    > label {
+      color: red;
+      text-transform: capitalize;
+      font-family: orbit;
+      font-size: 10px;
+      position: absolute;
+      transition: 300ms;
+      opacity: 0;
+      &:nth-of-type(1) {
+        top: 20%;
+        left: 9%;
+      }
+      &:nth-of-type(2) {
+        top: 20%;
+        left: 54%;
+      }
+      &:nth-of-type(3) {
+        top: 38%;
+        left: 9%;
+      }
+      &:nth-of-type(4) {
+        top: 60%;
+        left: 9%;
+      }
+      &:nth-of-type(5) {
+        top: 75%;
+        left: 9%;
+      }
+    }
+    > input {
+      background-color: transparent;
+      width: 100%;
+      margin-bottom: 40px;
+      border: none;
+      border-bottom: 1px solid whitesmoke;
+      outline: unset;
+      padding: 8px;
+      color: white;
+      font-family: orbit;
+      &::placeholder {
+        color: gray;
+        font-family: orbit;
+        text-transform: capitalize;
+      }
+      &:nth-of-type(1) {
+        width: 47%;
+      }
+      &:nth-of-type(2) {
+        width: 47%;
+      }
+    }
+    > button {
+      background-color: transparent;
+      border: 2px solid lightgray;
+      padding: 7px 15px;
+      border-radius: 3px;
+      color: whitesmoke;
+      font-family: orbit;
+      cursor: pointer;
+      transition: 300ms;
+      &:hover {
+        background-color: lightgray;
+        color: #243b55;
+        border-radius: 5px;
+      }
+    }
+    > div {
+      height: 3px;
+      width: 0;
+      transition: 500ms;
+      position: absolute;
+      left: 57;
+      top: 57%;
+      background-color: red;
+    }
+    > span {
+      position: absolute;
+      top: 48%;
+      left: 87%;
+      cursor: pointer;
+      &:nth-of-type(2) {
+        top: 66.5%;
+      }
+      > i {
+        color: whitesmoke;
+      }
+    }
+  }
+}
+#status {
+  color: lightgray;
+  text-transform: capitalize;
+  font-family: orbit;
+  position: absolute;
+  right: 9%;
+  top: 56%;
+}
